@@ -1,0 +1,17 @@
+:root {
+  /* brand palette */
+  --cava-burgundy-deep: #6A1F33;
+  --cava-burgundy-light: #A34E5D;
+  --cava-beige: #E7D5C5;
+  --cava-yellow: #F2C94C;
+  --cava-olive: #7E8A6C;
+  --cava-brown: #8C6E63;
+  --cava-wine-dark: #4B0E1C;
+
+  /* typography */
+  --font-title: "Playfair Display", serif;
+  --font-body: "Inter", sans-serif;
+
+  /* spacing */
+  --section-padding: 5rem 2rem;
+}

@@ -1,16 +1,25 @@
 ---
+import MainLayout from "../layouts/MainLayout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 
+import HeroCava24 from "../components/sections/HeroCava24.svelte";
+import PlataformaB2B from "../components/sections/PlataformaB2B.svelte";
+import PorqueNace from "../components/sections/PorqueNace.svelte";
+import RedFederal from "../components/sections/RedFederal.svelte";
+import Testimonios from "../components/sections/Testimonios.svelte";
+import CTAFinal from "../components/sections/CTAFinal.svelte";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<MainLayout>
+  <Header />
+
+  <HeroCava24 client:load />
+  <PlataformaB2B client:load />
+  <PorqueNace client:load />
+  <RedFederal client:load />
+  <Testimonios client:load />
+  <CTAFinal client:load />
+
+  <Footer />
+</MainLayout>

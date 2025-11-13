@@ -1,0 +1,21 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+
+import HeroBodegas from "../components/bodegas/HeroBodegas.svelte";
+import PasosBodegas from "../components/bodegas/PasosBodegas.svelte";
+import MockupPanelBodega from "../components/bodegas/MockupPanelBodega.svelte";
+import CTABodega from "../components/bodegas/CTABodega.svelte";
+---
+
+<MainLayout title="Cava24 · Bodegas" description="Proceso y beneficios para bodegas fundadoras de Cava24.">
+  <Header />
+
+  <HeroBodegas client:load />
+  <PasosBodegas client:load />
+  <MockupPanelBodega client:load />
+  <CTABodega client:load />
+
+  <Footer />
+</MainLayout>

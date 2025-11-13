@@ -1,0 +1,21 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+
+import HeroCompradores from "../components/compradores/HeroCompradores.svelte";
+import FiltrosCompradores from "../components/compradores/FiltrosCompradores.svelte";
+import GrillaCompradores from "../components/compradores/GrillaCompradores.svelte";
+import CTACompradores from "../components/compradores/CTACompradores.svelte";
+---
+
+<MainLayout title="Cava24 · Compradores" description="Catálogo y beneficios para compradores profesionales.">
+  <Header />
+
+  <HeroCompradores client:load />
+  <FiltrosCompradores client:load />
+  <GrillaCompradores client:load />
+  <CTACompradores client:load />
+
+  <Footer />
+</MainLayout>

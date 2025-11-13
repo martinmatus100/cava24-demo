@@ -1,0 +1,234 @@
+<footer id="contacto-section" class="cava-footer">
+  <section class="footer-contact">
+    <div class="footer-inner">
+      <div class="footer-text">
+        <h2>Contacto y comunidad</h2>
+        <p>
+          Esta demo de Cava24 fue diseñada para validar el proyecto de plataforma B2B de vinos.
+          Si sos bodega, comprador profesional o querés invertir, dejá tus datos y te contactamos.
+        </p>
+
+        <div class="footer-tags">
+          <span>• Bodegas boutique</span>
+          <span>• Compradores profesionales</span>
+          <span>• Inversores estratégicos</span>
+        </div>
+
+        <div class="footer-social">
+          <span>Redes (placeholders):</span>
+          <a href="#">Instagram</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">Correo</a>
+        </div>
+      </div>
+
+      <form class="footer-form">
+        <div class="field">
+          <label for="nombre">Nombre y apellido</label>
+          <input id="nombre" type="text" placeholder="Ej: Ana López" />
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="nombre@empresa.com" />
+        </div>
+
+        <div class="field">
+          <label for="tipo">Soy...</label>
+          <select id="tipo">
+            <option value="">Seleccionar una opción</option>
+            <option value="bodega">Bodega</option>
+            <option value="comprador">Comprador profesional</option>
+            <option value="inversor">Inversor / Advisor</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="mensaje">Mensaje (opcional)</label>
+          <textarea id="mensaje" rows="3" placeholder="Contanos brevemente tu interés."></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit">
+          Enviar interés
+        </button>
+
+        <p class="form-note">
+          Este formulario es solo demostrativo. La versión productiva se integrará con el stack
+          definitivo de Cava24.
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <div class="footer-bottom">
+    <div class="bottom-inner">
+      <p>
+        Demo creada para validación del proyecto Plataforma B2B de Vinos · Cava24
+      </p>
+      <p class="bottom-meta">
+        Origen & destino del vino argentino · 2025
+      </p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .cava-footer {
+    background: #2b0b16;
+    color: #fdf2eb;
+  }
+
+  .footer-contact {
+    padding: 4rem 2rem 2.5rem 2rem;
+  }
+
+  .footer-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    gap: 2.5rem;
+  }
+
+  @media (min-width: 900px) {
+    .footer-inner {
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+      align-items: flex-start;
+    }
+  }
+
+  .footer-text h2 {
+    font-size: clamp(1.8rem, 3vw, 2.3rem);
+    margin-bottom: 0.8rem;
+  }
+
+  .footer-text p {
+    font-size: 0.96rem;
+    opacity: 0.9;
+    max-width: 560px;
+  }
+
+  .footer-tags {
+    margin: 1.4rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem 1.2rem;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    opacity: 0.8;
+  }
+
+  .footer-social {
+    font-size: 0.9rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+    align-items: center;
+  }
+
+  .footer-social span {
+    opacity: 0.8;
+  }
+
+  .footer-social a {
+    color: #f8ede3;
+    text-decoration: none;
+    border-bottom: 1px dashed rgba(248, 237, 227, 0.5);
+    font-weight: 500;
+  }
+
+  .footer-form {
+    background: rgba(0, 0, 0, 0.18);
+    border-radius: 1.4rem;
+    padding: 1.8rem 1.6rem;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.4);
+  }
+
+  .field {
+    margin-bottom: 1rem;
+  }
+
+  .field label {
+    display: block;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    margin-bottom: 0.3rem;
+    opacity: 0.8;
+  }
+
+  .field input,
+  .field select,
+  .field textarea {
+    width: 100%;
+    border-radius: 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 0.6rem 0.8rem;
+    background: rgba(0, 0, 0, 0.25);
+    color: #fdf2eb;
+    font-family: inherit;
+    font-size: 0.9rem;
+  }
+
+  .field input::placeholder,
+  .field textarea::placeholder {
+    color: rgba(253, 242, 235, 0.65);
+  }
+
+  .btn-submit {
+    margin-top: 0.4rem;
+    width: 100%;
+    border-radius: 999px;
+    border: none;
+    background: var(--cava-yellow, #f2c94c);
+    color: #4b0e1c;
+    padding: 0.8rem 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 0.95rem;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+  }
+
+  .btn-submit:hover {
+    transform: translateY(-1px);
+    filter: brightness(1.05);
+    box-shadow: 0 22px 55px rgba(0, 0, 0, 0.6);
+  }
+
+  .form-note {
+    margin-top: 0.6rem;
+    font-size: 0.78rem;
+    opacity: 0.7;
+  }
+
+  .footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 1rem 2rem 1.4rem 2rem;
+    background: #210712;
+  }
+
+  .bottom-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    font-size: 0.8rem;
+    opacity: 0.8;
+  }
+
+  @media (min-width: 700px) {
+    .bottom-inner {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  .bottom-meta {
+    font-size: 0.78rem;
+  }
+</style>
