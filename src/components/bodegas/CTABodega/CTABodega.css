@@ -1,0 +1,39 @@
+.cta-bodega {
+  padding: 4rem 2rem;
+  background: var(--cava-burgundy-deep, #6a1f33);
+  color: #fff;
+  text-align: center;
+}
+
+.cta-bodega__inner {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.cta-bodega__title {
+  font-size: clamp(2rem, 3vw, 2.6rem);
+  margin-bottom: 0.8rem;
+  color: white;
+}
+
+.cta-bodega__text {
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.cta-bodega__button {
+  padding: 0.9rem 1.8rem;
+  border-radius: 999px;
+  background: var(--cava-yellow, #f2c94c);
+  color: #4b0e1c;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.cta-bodega__button:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.05);
+}

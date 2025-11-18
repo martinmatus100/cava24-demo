@@ -1,0 +1,34 @@
+.hero-compradores {
+  min-height: 45vh;
+  background: linear-gradient(
+    to bottom right,
+    rgba(106,31,51,0.25),
+    rgba(231,213,197,0.9)
+  ),
+  url("/cava24-demo/images/hero-vinedos.png");
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-compradores__inner {
+  max-width: 650px;
+  margin-left: 42%;
+}
+
+.hero-compradores__title {
+  font-size: clamp(2rem, 3vw, 2.7rem);
+  margin-bottom: 1rem;
+  color: var(--cava-wine-dark);
+}
+
+.hero-compradores__text {
+  font-size: 1rem;
+  opacity: 0.85;
+  max-width: 550px;
+  margin: 0 auto;
+}

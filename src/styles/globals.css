@@ -2,7 +2,6 @@
 
 html, body {
   margin: 0;
-  padding-top: 72px;
   background: var(--cava-beige);
   font-family: var(--font-body);
   color: var(--cava-wine-dark);

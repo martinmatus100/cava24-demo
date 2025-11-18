@@ -1,0 +1,35 @@
+.hero-bodegas {
+  min-height: 50vh;
+  background: linear-gradient(
+    to bottom right,
+    rgba(106, 31, 51, 0.20),
+    rgba(227, 205, 187, 0.90)
+  ),
+  url("/cava24-demo/images/hero-vinedos.png");
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--cava-wine-dark);
+  text-align: center;
+}
+
+.hero-bodegas__inner {
+  max-width: 700px;
+  margin-left: 42%;
+}
+
+.hero-bodegas__title {
+  font-size: clamp(2rem, 3vw, 2.8rem);
+  margin-bottom: 1rem;
+  color: #4b0e1c;
+}
+
+.hero-bodegas__text {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1rem;
+  opacity: 0.85;
+}

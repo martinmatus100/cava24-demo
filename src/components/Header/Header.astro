@@ -1,0 +1,29 @@
+---
+const links = [
+  { href: "/cava24-demo/", label: "Inicio" },
+  { href: "/cava24-demo/bodegas", label: "Bodegas" },
+  { href: "/cava24-demo/compradores", label: "Compradores" },
+  { href: "/cava24-demo/#comofunciona", label: "Cómo funciona" },
+  { href: "#contacto-section", label: "Contacto" },
+];
+import "./Header.css";
+---
+
+<header class="cava-header">
+  <div class="cava-header-inner">
+    <a href="/cava24-demo/" class="cava-logo">
+      CAVA·24
+      <span class="logo-tagline">El origen se conecta con el destino</span>
+    </a>
+
+    <nav class="cava-nav">
+      {links.map((link) => (
+        <a href={link.href}>{link.label}</a>
+      ))}
+    </nav>
+
+    <a href="#contacto-section" class="header-cta">
+      Quiero ser parte
+    </a>
+  </div>
+</header>

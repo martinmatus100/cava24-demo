@@ -1,0 +1,78 @@
+---
+import "./Footer.css";
+---
+
+<footer id="contacto-section" class="cava-footer">
+  <section class="footer-contact">
+    <div class="footer-inner">
+      <div class="footer-text">
+        <h2>Contacto y comunidad</h2>
+        <p>
+          Esta demo de Cava24 fue diseñada para validar el proyecto de plataforma B2B de vinos.
+          Si sos bodega, comprador profesional o querés invertir, dejá tus datos y te contactamos.
+        </p>
+
+        <div class="footer-tags">
+          <span>• Bodegas boutique</span>
+          <span>• Compradores profesionales</span>
+          <span>• Inversores estratégicos</span>
+        </div>
+
+        <div class="footer-social">
+          <span>Redes (placeholders):</span>
+          <a href="#">Instagram</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">Correo</a>
+        </div>
+      </div>
+
+      <form class="footer-form">
+        <div class="field">
+          <label for="nombre">Nombre y apellido</label>
+          <input id="nombre" type="text" placeholder="Ej: Ana López" />
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="nombre@empresa.com" />
+        </div>
+
+        <div class="field">
+          <label for="tipo">Soy...</label>
+          <select id="tipo">
+            <option value="">Seleccionar una opción</option>
+            <option value="bodega">Bodega</option>
+            <option value="comprador">Comprador profesional</option>
+            <option value="inversor">Inversor / Advisor</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="mensaje">Mensaje (opcional)</label>
+          <textarea id="mensaje" rows="3" placeholder="Contanos brevemente tu interés."></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit">
+          Enviar interés
+        </button>
+
+        <p class="form-note">
+          Este formulario es solo demostrativo. La versión productiva se integrará con el stack
+          definitivo de Cava24.
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <div class="footer-bottom">
+    <div class="bottom-inner">
+      <p>
+        Demo creada para validación del proyecto Plataforma B2B de Vinos · Cava24
+      </p>
+      <p class="bottom-meta">
+        Origen & destino del vino argentino · 2025
+      </p>
+    </div>
+  </div>
+</footer>

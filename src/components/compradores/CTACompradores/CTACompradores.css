@@ -1,0 +1,39 @@
+.cta-compradores {
+  padding: 4rem 2rem;
+  background: var(--cava-burgundy-light, #a34e5d);
+  color: #fff;
+  text-align: center;
+}
+
+.cta-compradores__inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cta-compradores__title {
+  font-size: clamp(2rem, 3vw, 2.5rem);
+  margin-bottom: 1rem;
+  color: whitesmoke;
+}
+
+.cta-compradores__text {
+  opacity: 0.9;
+  margin-bottom: 2rem;
+}
+
+.cta-compradores__button {
+  padding: 0.9rem 1.8rem;
+  border-radius: 999px;
+  background: var(--cava-yellow);
+  color: #4b0e1c;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 20px 45px rgba(0,0,0,0.4);
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.cta-compradores__button:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.05);
+}

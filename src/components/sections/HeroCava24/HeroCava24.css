@@ -1,0 +1,157 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+
+  /* Parallax básico */
+  background-image: url("/cava24-demo/images/hero-vinedos.png");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 20% 20%, rgba(255,255,255,0.12), transparent),
+              linear-gradient(to bottom, rgba(0,0,0,0.45), rgba(0,0,0,0.75));
+  z-index: 1;
+}
+
+.hero__content {
+  position: relative;
+  z-index: 2;
+  max-width: 780px;
+  text-align: center;
+  padding-top: 5rem;
+  margin-left: 42%;
+}
+
+.hero__kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.8rem;
+  opacity: 0.9;
+  margin-bottom: 0.8rem;
+  color: var(--cava-brown);
+}
+
+.hero__title {
+  font-size: clamp(2.4rem, 4vw, 3.4rem);
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+.hero__subtitle {
+  font-size: 1.05rem;
+  max-width: 620px;
+  margin: 0 auto 2rem auto;
+  opacity: 0.95;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero__button {
+  padding: 0.9rem 1.8rem;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease,
+    color 0.2s ease, border-color 0.2s ease;
+}
+
+.hero__button--primary {
+  background: var(--cava-burgundy-deep, #6a1f33);
+  color: #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.hero__button--primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.45);
+}
+
+.hero__button--secondary {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--cava-burgundy-deep);
+  border: 1px solid var(--cava-burgundy-deep);
+  backdrop-filter: blur(6px);
+}
+
+.hero__button--secondary:hover {
+  background: rgba(255, 255, 255, 0.16);
+  transform: translateY(-2px);
+}
+
+.hero__hint {
+  font-size: 0.85rem;
+  opacity: 0.85;
+  color: var(--cava-brown);
+}
+
+.hero__scroll-indicator {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.hero__scroll-indicator-body {
+  display: block;
+  width: 24px;
+  height: 40px;
+  border-radius: 999px;
+  border: 2px solid rgba(255,255,255,0.8);
+  position: relative;
+}
+
+.hero__scroll-indicator-body::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.9);
+  animation: scroll-dot 1.4s infinite ease-in-out;
+}
+
+@keyframes scroll-dot {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 0);
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, 14px);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 0 1.5rem;
+    background-attachment: scroll; /* por performance en mobile */
+  }
+
+  .hero__content {
+    padding-top: 4.5rem;
+  }
+}

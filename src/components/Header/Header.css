@@ -1,0 +1,114 @@
+.cava-header {
+  position: fixed;
+  inset-inline: 0;
+  top: 0;
+  z-index: 999;
+  background: rgba(231, 213, 197, 0.96);
+  backdrop-filter: blur(10px);
+}
+
+.cava-header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.8rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.cava-logo {
+  text-decoration: none;
+  color: var(--cava-wine-dark, #4b0e1c);
+  font-family: var(--font-title, "Playfair Display", serif);
+  font-size: 1.4rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.logo-tagline {
+  font-family: var(--font-body, "Inter", sans-serif);
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+.cava-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  font-size: 0.9rem;
+}
+
+.cava-nav a {
+  text-decoration: none;
+  color: var(--cava-wine-dark, #4b0e1c);
+  font-weight: 500;
+  position: relative;
+}
+
+.cava-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.2rem;
+  width: 0;
+  height: 2px;
+  background: var(--cava-burgundy-deep, #6a1f33);
+  transition: width 0.2s ease;
+}
+
+.cava-nav a:hover::after {
+  width: 100%;
+}
+
+.header-cta {
+  padding: 0.6rem 1.4rem;
+  border-radius: 999px;
+  background: var(--cava-burgundy-deep, #6a1f33);
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  white-space: nowrap;
+}
+
+.header-cta:hover {
+  filter: brightness(1.05);
+  transform: translateY(-1px);
+}
+
+@media (max-width: 900px) {
+  .cava-header-inner {
+    padding-inline: 1.2rem;
+    gap: 0.8rem;
+  }
+
+  .logo-tagline {
+    display: none;
+  }
+
+  .cava-nav {
+    display: none; /* versión simple sin burger; más adelante podemos hacer menú mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .cava-header-inner {
+    padding: 0.6rem 1rem;
+  }
+
+  .header-cta {
+    padding: 0.4rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  .cava-logo {
+    font-size: 1.1rem;
+  }
+}

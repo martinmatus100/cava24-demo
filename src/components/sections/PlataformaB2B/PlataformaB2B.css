@@ -1,0 +1,85 @@
+.section-b2b {
+  padding: 5rem 2rem;
+  background: #f8ede3;
+}
+
+.section-b2b__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section-b2b__title {
+  font-size: clamp(2rem, 3vw, 2.6rem);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.section-b2b__lead {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 3rem auto;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.section-b2b__grid {
+  display: grid;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .section-b2b__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.section-b2b__card {
+  background: #fff;
+  border-radius: 1.5rem;
+  padding: 2rem 1.75rem;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.06);
+  position: relative;
+  overflow: hidden;
+}
+
+.section-b2b__card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top left, rgba(106, 31, 51, 0.12), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.section-b2b__card:hover::before {
+  opacity: 1;
+}
+
+.section-b2b__emoji {
+  font-size: 2.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.section-b2b__card-title {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-b2b__card-text {
+  font-size: 0.95rem;
+  margin-bottom: 0.8rem;
+  opacity: 0.95;
+}
+
+.section-b2b__list {
+  padding-left: 1.1rem;
+  margin: 0;
+  list-style: disc;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.section-b2b__list-item + .section-b2b__list-item {
+  margin-top: 0.3rem;
+}
